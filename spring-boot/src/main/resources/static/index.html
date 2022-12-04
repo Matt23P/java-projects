@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="icon" href="../images/icon.svg">
+    <title>Mateusz Przybyl - Spring Application</title>
+    <link rel="stylesheet" type="text/css" href="styleIndex.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body>
+<form action="/greetings" method="GET" id="nameForm">
+    <div>
+        <label for="nameField">How should the app call you?</label>
+        <input name="username" id="nameField">
+        <button>Greet me!</button>
+    </div>
+    <input type="submit" value="Anonymous greetings"/>
+</form>
+
+<br>
+<form action="/add" method="POST" id="addCustomer">
+    <ul>
+        <li>Add customer</li>
+    </ul>
+    <center>
+        <div>
+            <label for="firstName">First name:</label>
+            <input name="name" id="firstName" value="">
+        </div>
+        <div>
+            <label for="lastName">Last name:</label>
+            <input name="surname" id="lastName" value="">
+        </div>
+        <button>Add customer</button>
+    </center>
+    </div>
+</form>
+
+<form action="/list">
+    <ul>
+        <li>List of customers</li>
+    </ul>
+    <center>
+        <button>Show all customers</button>
+    </center>
+</form>
+
+
+<form action="/find/" method="GET" id="findCustomerById">
+    <ul>
+        <li>Find customer by ID</li>
+    </ul>
+    <center>
+        <div>
+            <label for="getId">ID:</label>
+            <input name="id" id="getId">
+        </div>
+        <div>
+            <button>Find customer</button>
+        </div>
+    </center>
+</form>
+
+
+<form action="/delete/" method="POST" id="deleteCustomerById">
+    <ul>
+        <li>Delete customer by ID</li>
+    </ul>
+    <center>
+        <div>
+            <label for="idGetter">ID:</label>
+            <input name="id" id="idGetter">
+        </div>
+        <div>
+            <button>Delete customer</button>
+        </div>
+    </center>
+</form>
+
+</body>
+
+</html>
